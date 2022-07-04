@@ -1,0 +1,13 @@
+"Phrases" {
+	"PREFIX" {
+		"en"	""
+	}
+	
+	"BAN_REASON" {
+		"en"	"Damaging teammates repeatedly!"
+	}
+	
+	"WARNING" {
+		"en"	"{red}You will be banned if you continue damaging your teammates!"
+	}
+}
