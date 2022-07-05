@@ -55,7 +55,7 @@ public Action EventPlayerHurt(Handle event, const char[] name, bool dontBroadcas
 		return Plugin_Handled;
 		
 	int index = GetClientOfUserId(GetEventInt(event, "userid")); //Get victim index
-	if (GetClientTeam(index) != GetClientTeam(attacker)) //Verify that the attacker and the victim have the same team
+	if (GetClientTeam(index) != GetClientTeam(attacker) || index == attacker) //Verify that the attacker and the victim have the same team, and that client isnt damaging himself
 		return Plugin_Continue;
 	
 	g_iClientHits[attacker]++; //Add one headshot to the counter
